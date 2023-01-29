@@ -4,11 +4,11 @@
 
 namespace OSCO
 {
-      template<class T>
-  concept NumberT = std::is_arithmetic<T>::value; 
+    template<class T>
+    concept NumberT = std::is_arithmetic<T>::value; 
 
-  template<class T>
-  concept IndexT = std::is_integral<T>::value;
+    template<class T>
+    concept IndexT = std::is_integral<T>::value;
 
 // TODO: make this into a function type for the 'ChooseNextSchedule' function
 //   template<class Func,class number,class index,class coords>
