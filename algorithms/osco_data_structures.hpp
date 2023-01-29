@@ -1,3 +1,6 @@
+#pragma once
+#include <vector>
+
 #include "osco_concepts.hpp"
 
 namespace OSCO
@@ -12,7 +15,7 @@ namespace OSCO
     public:
         // TODO constructor
 
-        Schedule& |(RequestT&& value)
+        Schedule& operator |(RequestT&& value)
         {
             requests.push_back(std::forward<RequestT>(value));
             return *this;

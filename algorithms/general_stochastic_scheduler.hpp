@@ -1,3 +1,4 @@
+#pragma once
 #include "osco_concepts.hpp"
 
 namespace OSCO
